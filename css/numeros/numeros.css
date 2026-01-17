@@ -1,0 +1,62 @@
+.numeros-bg {
+  background-color: var(--cor-blue-5);
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.numeros-conteudo {
+  display: flex;
+  gap: 7.7rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.numeros h2 {
+  max-width: 700px;
+  text-align: center;
+}
+
+.numeros-card h3 {
+  font-variant-numeric: tabular-nums; /* Garante que todos os números tenham a mesma largura */
+}
+
+.numeros-flex {
+  display: flex;
+  gap: 21rem;
+}
+.numeros-card {
+  gap: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.numeros .button {
+  background-color: var(--cor-1) !important;
+  color: var(---cor-2);
+  margin-top: 4rem;
+}
+
+.numeros .button::after {
+  background: url(/assets/icons/arrow-btn-black.svg);
+}
+
+.numeros-card p {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+@media (max-width: 768px) {
+  .numeros-flex {
+    flex-direction: column !important;
+    gap: 4rem;
+  }
+  .numeros-card {
+    flex-direction: column;
+  }
+  .numeros-conteudo {
+    gap: 2rem;
+  }
+}

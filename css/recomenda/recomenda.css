@@ -1,0 +1,84 @@
+.recomenda {
+    background: var(--cor-1);
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.recomenda-conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9.6rem;
+}
+
+.recomenda h2 {
+    max-width: 400px;
+    text-align: center;
+}
+
+
+
+.recomenda-flex {
+    align-items: flex-start;
+    display: flex;
+    gap: 2em;
+}
+
+.recomenda-card {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: var(--cor-4);
+    gap: 1.6rem;
+    border-radius: 3.2rem;
+    max-width: 500px;
+    padding: 4rem;
+    position: relative;
+    padding-top: 6rem;
+    
+}
+
+.recomenda-card h3{
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.recomenda h3 span {
+    font-weight: 600;
+    font-size: 2.2rem;
+}
+
+.recomenda p {
+    max-width: 450px;
+}
+
+.ver-video {
+    display: flex;
+    padding: 21px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    background: #FFF;
+}
+
+.recomenda-card .cliente {
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+    top: -45px;
+    position: absolute;
+}
+
+@media (max-width: 768px) {
+.recomenda-flex {
+    flex-direction: column;
+    gap: 9rem;
+}
+.recomenda-card {
+    padding-bottom: 6rem;
+}
+}

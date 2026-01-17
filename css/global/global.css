@@ -1,0 +1,57 @@
+:root {
+  font-size: 62.5%;
+}
+
+.main-container {
+  overflow-x: hidden;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body,
+html {
+  width: 100%;
+}
+
+html {
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  touch-action: manipulation;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  box-sizing: border-box; /* Inclui padding e borda nas dimensões totais */
+  padding: 0px 20px;
+  max-width: 1440px;
+  margin: 0 auto;
+  overflow: hidden; /* Esconde qualquer conteúdo que saia dos limites do container */
+}
+
+@media (max-width: 768px) {
+  :root {
+    font-size: 50%;
+  }
+  .container {
+    max-width: fit-content;
+  }
+}

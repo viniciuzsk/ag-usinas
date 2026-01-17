@@ -1,0 +1,172 @@
+.economia-energia-bg {
+  background-color: rgb(255, 255, 255);
+  -webkit-box-shadow: inset 0px 196px 0px 0px var(--cor-blue-5);
+  -moz-box-shadow: inset 0px 196px 0px 0px var(--cor-blue-5);
+  box-shadow: inset 0px 196px 0px 0px var(--cor-blue-5);
+  position: relative;
+}
+
+.economia-energia-conteudo {
+  /* position: relative; */
+  width: 75vw;
+  margin: 0 auto;
+  height: 400px;
+  background-image: url("/assets/img/economia-energia-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 96px 118px 96px 118px;
+  background-color: white;
+  height: 552px;
+  border-radius: 36px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.economia-energia-texto h1 {
+  max-width: 466px;
+}
+
+.economia-energia-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.economia-energia-texto p {
+  max-width: 450px;
+}
+
+.economia-energia-vantagens {
+  width: 45.05vw;
+  background-color: #f5f5f5;
+  padding: 47px;
+  border-radius: 42px;
+  position: absolute;
+  top: 90px;
+  right: 78px;
+}
+
+.lista-vantagens li {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+}
+
+.lista-vantagens {
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+}
+
+.lista-vantagens img {
+  width: 26px;
+  height: 12px;
+}
+
+.economia-energia-continuacao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 11.5rem;
+}
+
+.economia-energia-continuacao h2 {
+  text-align: center;
+  margin-top: 11.8rem;
+  margin-bottom: 8.4rem;
+}
+
+.beneficios h3 {
+  text-align: center;
+  line-height: 100%;
+}
+
+.beneficios-card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  padding: 4rem;
+  display: flex;
+  max-width: 340px;
+  flex-direction: column;
+  background: var(--cor-4);
+  border-radius: 3.2rem;
+  gap: 2rem;
+  align-items: center;
+  align-self: flex-start;
+}
+.beneficios-card:hover {
+  transform: scale(1.02); /* Aumenta o tamanho do card em 5% */
+  box-shadow: 0px 70px 19px 0px rgba(0, 0, 0, 0),
+    0px 45px 18px 0px rgba(0, 0, 0, 0.01), 0px 25px 15px 0px rgba(0, 0, 0, 0.05),
+    0px 11px 11px 0px rgba(0, 0, 0, 0.08), 0px 3px 6px 0px rgba(0, 0, 0, 0.09);
+}
+
+.beneficios p {
+  text-align: center;
+}
+
+.beneficios {
+  display: flex;
+  flex-direction: row;
+  gap: 1.6rem;
+  margin-bottom: 11rem;
+}
+
+.beneficios img {
+  width: 65px;
+  height: 65px;
+}
+
+@media (max-width: 880px) {
+  .beneficios {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1440px) {
+  .economia-energia-conteudo {
+    width: 80vw;
+  }
+  .economia-energia-vantagens {
+    top: 50px;
+    right: 40px;
+  }
+}
+
+@media (max-width: 1360px) {
+  .economia-energia-conteudo {
+    grid-template-columns: 1fr;
+    height: 100%;
+    padding: 48px 59px;
+    gap: 30px;
+  }
+  .economia-energia-texto {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    gap: 20px;
+  }
+
+  .economia-energia-vantagens {
+    position: static;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 610px) {
+  .economia-energia-conteudo {
+    width: 95vw;
+    padding: 70px 30px;
+    border-radius: 15px;
+  }
+  .economia-energia-vantagens {
+    padding: 20px;
+    border-radius: 15px;
+  }
+  .lista-vantagens {
+    gap: 10px;
+  }
+}

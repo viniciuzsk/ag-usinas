@@ -1,0 +1,199 @@
+.independente {
+  overflow: visible;
+}
+
+/* Estilo geral do fundo independente */
+.independente-bg {
+  background-color: rgb(255, 255, 255);
+  padding-top: 120px;
+  padding-bottom: 120px;
+  position: relative;
+}
+
+/* Estilo das setas */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #000 !important; /* Cor da seta, ajuste conforme necessário */
+  display: block;
+}
+
+/* Esconder as setas no mobile */
+@media (max-width: 767px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;
+  }
+}
+
+/* Estilo para a classe usinas */
+.usinas {
+  width: 685px;
+  height: auto;
+  position: absolute;
+}
+
+/* Estilo para a classe independente com display em grid */
+.independente {
+  gap: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Estilo para os títulos da classe independente-conteudo */
+.independente-conteudo h2 {
+  margin-bottom: 27px;
+}
+
+/* Estilo para os parágrafos da classe independente-conteudo */
+.independente-conteudo p {
+  font-style: normal;
+  line-height: 116%;
+  margin-bottom: 27px;
+}
+
+/* Estilo para a classe independente-usinas com alinhamento flexível */
+.independente-usinas {
+  display: none !important;
+  scroll-snap-align: center;
+  display: flex !important;
+}
+
+/* Estilo para as imagens das usinas */
+.imagem-usinas {
+  background-color: #9d9d9d;
+  min-width: 340px;
+  height: auto;
+  border-radius: 32px;
+  object-fit: cover;
+}
+
+/* Estilo para a informação das usinas */
+.info-usinas {
+  background-color: #f5f5f5;
+  min-width: 340px;
+  border-radius: 32px;
+  padding: 40px;
+  scroll-snap-align: end;
+}
+
+/* Estilo para os títulos da classe info-usinas */
+.info-usinas h3 {
+  margin-bottom: 10px;
+}
+
+/* Estilo para a lista na classe info-usinas */
+.info-usinas ul {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 90%;
+}
+
+/* Estilo para os itens da lista na classe info-usinas */
+.info-usinas li {
+  display: flex;
+  gap: 17px;
+  align-items: center;
+}
+
+/* Estilo para as imagens na classe info-usinas */
+.info-usinas img {
+  width: 12.25px;
+  height: 15.38px;
+}
+
+/* Estilo para a paginação das usinas */
+.usinas-pagination {
+  margin-bottom: 20px;
+  position: absolute;
+}
+
+/* Estilo para a classe row quando ativa */
+.row:active {
+  cursor: grabbing;
+}
+
+/* Estilo para a classe info-usinas dentro de row */
+.row > .info-usinas {
+  flex: 0 0 auto;
+  width: 300px;
+  height: 300px;
+  background-color: #ddd;
+}
+
+@media (max-width: 768px) {
+  /* Estilo específico para ajustar o tamanho do swiper no mobile */
+  .swiper.usinas {
+    padding-bottom: 20px; /* Reduz o espaço para a paginação */
+  }
+
+  .swiper-slide {
+    height: 200px; /* Ajuste a altura conforme necessário */
+    dis
+  }
+
+  .imagem-usinas {
+    height: 150px; /* Ajuste a altura conforme necessário */
+  }
+}
+
+/* Estilo responsivo para telas menores que 725px */
+@media (max-width: 725px) {
+  .independende {
+    gap: 30px;
+  }
+  .row {
+    width: 100%;
+    height: 300px;
+  }
+  .usinas {
+    width: 100%;
+  }
+  .independente-bg {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+
+/* Estilo responsivo para telas menores que 1100px */
+@media (max-width: 1100px) {
+  .independente {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+}
+
+/* Estilo responsivo para telas menores que 430px */
+@media (max-width: 430px) {
+  .row {
+    height: 500px;
+  }
+  .imagem-usinas {
+    height: 300px;
+  }
+  .independente-usinas {
+    display: flex;
+    flex-direction: column;
+  }
+  .independente-conteudo {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+/* Estilo para o contêiner pai do swiper */
+.swiper.usinas {
+  position: relative;
+  padding-bottom: 50px; /* Adicione espaço para a paginação */
+}
+
+/* Estilo para os bullets de paginação do swiper */
+.swiper-pagination-bullet {
+  background-color: #13212f !important;
+  width: 18px !important;
+  height: 8px !important;
+  border-radius: 11px !important;
+  cursor: pointer !important;
+  pointer-events: none !important;
+}

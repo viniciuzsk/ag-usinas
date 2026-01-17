@@ -1,0 +1,28 @@
+@import url(css/global/global.css);
+
+@import url(css/utilidades/cores.css);
+
+@import url(css/utilidades/tipografia.css);
+
+@import url(css/home/home.css);
+
+@import url(css/independente/independente.css);
+
+@import url(css/marcas/marcas.css);
+
+@import url(css/numeros/numeros.css);
+
+@import url(css/economia-energia/economia-energia.css);
+
+@import url(css/recomenda/recomenda.css);
+@import url(css/abasteca/abasteca.css);
+
+@import url(css/vantagens-competitivas/vantagens-competitivas.css);
+
+@import url(css/reduza-custos/reduza-custos.css);
+
+@import url(css/melhor-escolha/melhor-escolha.css);
+
+@import url(css/benefits/benefits.css);
+
+@import url(css/footer/footer.css);

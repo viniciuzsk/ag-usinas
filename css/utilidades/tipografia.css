@@ -1,0 +1,183 @@
+/* Tipografia */
+
+/* Inter Font */
+.inter-regular {
+  font-family: "Inter", sans-serif;
+}
+
+.inter-semibold {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+
+.inter-bold {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+
+/* Roboto Font */
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* Titillium Web Font */
+.titillium-regular {
+  font-family: "Titillium Web", sans-serif;
+}
+
+.titillium-semibold {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+}
+
+/* Font Sizes */
+.font-size-16px {
+  font-size: 1.6rem;
+}
+
+.font-size-18px {
+  font-size: 1.8rem;
+  line-height: 116%;
+}
+
+.font-size-22px {
+  font-size: 2.2rem;
+}
+
+.font-size-32px {
+  font-size: 3.2rem;
+  line-height: 100%; /* 42px */
+}
+
+.font-size-42px {
+  font-size: 4.2rem;
+  line-height: 100%; /* 42px */
+}
+
+.font-size-62px {
+  font-size: 6.2rem;
+}
+
+.font-size-92px {
+  font-size: 9.2rem;
+  line-height: 100%; /* 112px */
+}
+
+.font-size-112px {
+  font-size: 11.2rem;
+  line-height: 100%; /* 112px */
+}
+
+/* Button */
+.button {
+  border-radius: 8px;
+  text-transform: uppercase;
+  background-color: var(--cor-blue-1);
+  color: var(--cor-1);
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  display: inline-flex;
+  padding: 21px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: 0.3s;
+}
+
+.button::after {
+  content: "";
+  display: inline-block;
+  width: 23px;
+  height: 16px;
+  margin-left: 12px;
+  background: url(/assets/icons/arrow-btn.svg);
+  transition: transform 0.2s;
+}
+
+.button:hover::after {
+  transform: translateX(6px);
+}
+
+.button img {
+  display: none;
+}
+
+@media (max-width: 450px) {
+  .font-size-62px {
+    font-size: 3.2rem;
+  }
+  .button {
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 15px 20px;
+  }
+}

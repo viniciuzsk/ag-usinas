@@ -1,0 +1,17 @@
+.vantagens-competitivas-bg {
+  background-color: white;
+}
+
+.vantagens-competitivas{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 127px;
+}
+
+.vantagens-competitivas h2{
+  max-width: 963px;
+  text-align: center;
+  margin-bottom: 131px;
+
+}

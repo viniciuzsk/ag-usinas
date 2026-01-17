@@ -1,0 +1,85 @@
+.main-bg {
+  background-image: url(/assets/img/homebackground2.png);
+  background-size: cover;
+  background-position: center;
+  max-height: 120vh;
+}
+
+.header-bg {
+  /* height: 15vh; */
+  background: rgba(255, 255, 255, 0.11);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.header {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header .ag-logo {
+  width: 61px;
+  height: 58px;
+}
+
+.home {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.home h1 {
+  max-width: 600px;
+  line-height: 100%; /* 62px */
+}
+
+.home p {
+  margin-top: 27px;
+  margin-bottom: 49px;
+}
+
+.home .pull {
+  position: absolute; /* Altera para 'absolute' para que possa ser posicionado em relação ao contêiner pai */
+  bottom: 0; /* Fixa na parte inferior do contêiner pai */
+  left: 50%; /* Move o elemento para o meio horizontalmente */
+  transform: translateX(-50%); /* Centraliza o elemento horizontalmente */
+}
+
+.home .sun {
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 430px) {
+  .header .button {
+    display: none;
+  }
+  .header-bg .header {
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 466px) {
+  .header .button {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+   .home {
+    height: 86vh;
+   }
+  }
+}
